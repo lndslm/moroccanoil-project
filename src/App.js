@@ -2,6 +2,9 @@ import "./App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faScissors } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faBagShopping } from "@fortawesome/free-solid-svg-icons";
 import Moroccanoil_logo from "./Moroccanoil_logo.png";
 
 export default function App() {
@@ -26,11 +29,39 @@ export default function App() {
         </div>
       </nav>
       <header className="header sticky-top">
-        <h1>
-          <a href="#" title="Moroccanoil logo">
-            <img src={Moroccanoil_logo} alt="Moroccanoil logo" />
-          </a>{" "}
-        </h1>
+        <div className="row ">
+          <div className="col-4 menu-logo">
+            <h1 className="mb-0">
+              <a href="#" title="Moroccanoil logo">
+                <img
+                  src={Moroccanoil_logo}
+                  alt="Moroccanoil logo"
+                  width={250}
+                />
+              </a>{" "}
+            </h1>
+          </div>
+          <div className="col-5 menu-list">
+            <ul className="justify-content-start gap-5">
+              <li className="px-2">haircare</li>
+              <li className="px-2">body</li>
+              <li>argan oil</li>
+            </ul>
+          </div>
+          <div className="col-3 menu-icons">
+            <ul className="justify-content-end gap-4">
+              <li className="mx-1">
+                <FontAwesomeIcon icon={faMagnifyingGlass} />
+              </li>
+              <li className="mx-1">
+                <FontAwesomeIcon icon={faUser} />
+              </li>
+              <li className="mx-1">
+                <FontAwesomeIcon icon={faBagShopping} />
+              </li>
+            </ul>
+          </div>
+        </div>
       </header>
     </div>
   );
