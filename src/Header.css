@@ -1,0 +1,67 @@
+.Header .navbar {
+  background-color: #401e17;
+  padding: 12px 30px;
+  height: 42px;
+  /* position: absolute;
+  z-index: 1000;*/
+  font-family: "League Spartan", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.Header .navbar a:link {
+  text-decoration: none;
+  color: white;
+}
+
+.Header .menu {
+  background-color: #fcf8f4;
+  color: #401e17;
+  height: 70px;
+  padding: 0 50px;
+}
+
+.Header .menu h1 {
+  line-height: 70px;
+}
+
+.Header .menu a {
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.Header .menu ul {
+  list-style: none;
+  line-height: 70px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.Header .menu .menu-list {
+  font-size: 15px;
+}
+
+.Header .menu .menu-icons {
+  font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+  .Header .country,
+  .Header .store-locator,
+  .Header .professionals,
+  .Header .menu-list,
+  .Header .user {
+    visibility: hidden;
+  }
+
+  .Header .menu {
+    padding: 0 30px;
+  }
+}
